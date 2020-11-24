@@ -1,0 +1,66 @@
+<div *ngIf = "displayFlag">
+    <div class="col-lg-8 control-section sb-property-border">
+        <ejs-pivotview 
+            #pivotview id='PivotView' 
+            
+            [dataSourceSettings]= "dataSourceSettings"
+            [gridSettings]='gridSettings'
+
+            showFieldList='true'
+            width='860' 
+            height='300' >
+        </ejs-pivotview>
+    </div>
+    <!-- <div class="col-lg-4 property-section pivottable-property-section">
+        <div class="property-panel-section">
+            <div class="property-panel-header">Properties</div>
+            <div class="property-panel-content">
+                <table id="property" class="property-panel-table" title="Properties" style="width: 100%">
+                    <tbody>
+                        <tr style="height: 50px">
+                            <td>
+                                <div>Fields:
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <ejs-dropdownlist id='ddlelement' #samples [dataSource]='ddfieldSource' [placeholder]='"Select a field"' (change) = "ddEvent($event)"></ejs-dropdownlist>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height: 50px">
+                            <td>
+                                <div>Members:
+                                </div>
+                            </td>
+                            <td style="padding-bottom: 16px">
+                                <div class="valuecls">
+                                    <ejs-multiselect id='multiselectelement' [dataSource]='checkBoxData' [fields]='cbfields'(filtering)='onFiltering($event)' [mode]='mode' [placeholder]='"Select Members"' (change) = "cbEvent($event)"></ejs-multiselect>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height: 50px">
+                            <td>
+                                <div>Filter Type:
+                                </div>
+                            </td>
+                            <td>
+                                <div style="margin-top:-5px">
+                                    <ejs-dropdownlist id='ddlelement' #samples [dataSource]='type' [placeholder]='"Select an operation"' (change) = "typeEvent($event)"></ejs-dropdownlist>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr style="height: 50px">
+                            <td></td>
+                            <td>
+                                <div style="float: right;margin-right: 4px">
+                                    <button ejs-button cssClass="e-flat" isPrimary = 'true' (click) = 'onClick($event)'>Apply</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div> -->
+</div>
